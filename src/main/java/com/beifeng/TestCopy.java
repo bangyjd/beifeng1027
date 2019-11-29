@@ -14,13 +14,13 @@ public class TestCopy {
 
     static void testCopyFromLocal() throws IOException {
         FileSystem fs = HdfsUtil.getFileSystem();
-        fs.copyFromLocalFile(new Path("e:/4.txt"), new Path("/beifeng/api/3.txt"));
+        fs.copyFromLocalFile(new Path("f:/4.txt"), new Path("/beifeng/api/3.txt"));
         fs.close();
     }
 
     static void testCopyToLocal() throws IOException {
         FileSystem fs = HdfsUtil.getFileSystem();
-        fs.copyToLocalFile(new Path("/beifeng/api/123.txt"),new Path("e:/5.txt"));
+        fs.copyToLocalFile(new Path("/beifeng/api/123.txt"),new Path("f:/5.txt"));
         fs.close();
     }
 }
